@@ -10,3 +10,7 @@ jobs:
       - uses: docker://pandoc/core:2.9
         with:
           args: --standalone --output=index.html input.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: my-artifact
+          path: index.html
