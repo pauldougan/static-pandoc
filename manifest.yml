@@ -1,0 +1,6 @@
+---
+applications:
+- name: static-pandoc
+  memory: 64M
+  buildpacks:
+  - staticfile_buildpack
