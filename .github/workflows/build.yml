@@ -15,7 +15,7 @@ jobs:
       - run: mkdir -p public
       - uses: docker://pandoc/core:2.9
         with:
-          args: --standalone --output=public/index.html $GITHUB_WORKSPACE/index.md
+          args: --standalone --output=public/index.html index.md
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
