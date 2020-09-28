@@ -1,14 +1,14 @@
 name: Run Pandoc
 
 on: push
+env:
+  CONTENT: Hello from github workflow
 
 jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - run: echo "$CONTENT - $GITHUB_WORKFLOW - $GITHUB_REPOSITORY" > input.md
-        env:
-          CONTENT: Hello from github wprkflow
+      - run: echo "$CONTENT - $GITHUB_WORKFLOW - $GITHUB_REPOSITORY" > input.md     
       - uses: docker://pandoc/core:2.9
         with:
           args: --standalone --output=index.html input.md
