@@ -1,4 +1,4 @@
-# hello html from pandoc
+# generate html with pandoc And host on paas
 
 Example web page published from markdown using pandoc
 
@@ -12,4 +12,4 @@ Example web page published from markdown using pandoc
 [paas](https://cloud.service.gov.uk)
 
 ---
-[github](https://github.com/pauldougan/static-pandoc)
+[github](https://github.com/pauldougan/static-pandoc) 
