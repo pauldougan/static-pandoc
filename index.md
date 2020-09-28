@@ -2,8 +2,6 @@
 
 Example web page published from markdown using pandoc
 
-> This is an updated verion of the site
-
 ## list
 
 - apples
@@ -12,3 +10,6 @@ Example web page published from markdown using pandoc
 
 ## link
 [paas](https://cloud.service.gov.uk)
+
+---
+[github](https://github.com/pauldougan/static-pandoc)
