@@ -1,6 +1,7 @@
 name: Run Pandoc
 
 on: push
+  
 env:
   CONTENT: Hello from github workflow
 
@@ -8,11 +9,12 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - run: echo "$CONTENT - $GITHUB_WORKFLOW - $GITHUB_REPOSITORY" > input.md     
+      - run: mkdir -p public
+      - run: echo "$CONTENT - $GITHUB_WORKFLOW - $GITHUB_REPOSITORY" > public/input.md     
       - uses: docker://pandoc/core:2.9
         with:
-          args: --standalone --output=index.html input.md
+          args: --standalone --output=public/index.html public/input.md
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
-          path: index.html
+          path: public/
