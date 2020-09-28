@@ -9,6 +9,9 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - run: ls -al $GITHUB_WORKSPACE
       - run: mkdir -p public
       - run: echo "$CONTENT - $GITHUB_WORKFLOW - $GITHUB_REPOSITORY" > public/input.md     
       - uses: docker://pandoc/core:2.9
