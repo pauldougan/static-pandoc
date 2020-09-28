@@ -11,12 +11,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - run: ls -al $GITHUB_WORKSPACE
       - run: mkdir -p public
-      - run: echo "$CONTENT - $GITHUB_WORKFLOW - $GITHUB_REPOSITORY" > public/input.md     
       - uses: docker://pandoc/core:2.9
         with:
-          args: --standalone --output=public/index.html public/input.md
+          args: --standalone --output=public/index.html $GITHUB_WORKSPACE/index.md
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
