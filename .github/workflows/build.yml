@@ -11,6 +11,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+      - run: ls -al $GITHUB_WORKSPACE 
       - run: mkdir -p public
       - uses: docker://pandoc/core:2.9
         with:
