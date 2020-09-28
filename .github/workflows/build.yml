@@ -19,3 +19,11 @@ jobs:
         with:
           name: my-artifact
           path: public/
+      - uses: citizen-of-planet-earth/cf-cli-action@master
+        with: 
+          cf_api: https://api.london.cloud.service.gov.uk
+          cf_username: ${{ secrets.CF_USER }}
+          cf_password: ${{ secrets.CF_PASSWORD }}
+          cf_org: gds-techarchs
+          cf_space: sandbox 
+          command: push
