@@ -6,10 +6,12 @@ jobs:
   convert_via_pandoc:
     runs-on: ubuntu-18.04
     steps:
-      - run: echo "foo" > input.txt  # create an example file
+      - run: echo "$CONTENT - $GITHUB_WORKFLOW - $GITHUB_REPOSITORY" > input.md
+        env:
+          CONTENT: Hello from github wprkflow
       - uses: docker://pandoc/core:2.9
         with:
-          args: --standalone --output=index.html input.txt
+          args: --standalone --output=index.html input.md
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
