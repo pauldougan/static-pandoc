@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - run: mkdir -p public
-      - uses: docker://pandoc/core:2.9
+      - uses: docker://pandoc/latex:2.9
         with:
           args: --standalone --output=public/index.html index.md
       - uses: actions/upload-artifact@v2
