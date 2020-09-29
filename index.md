@@ -2,6 +2,14 @@
 
 Example web page published from markdown using pandoc/latex and hosted on [GOV.UK PaaS]
 
+- [DOCX](index.docx)
+- [EPUB](index.epub)
+- [HTML](index.html)
+- [ODT](index.odt)
+- [PDF](index.pdf)
+- [TXT](index.txt)
+
+
 ![Cloud Foundry logo](cf-logo.jpg)
 
 ## list
@@ -25,6 +33,6 @@ quis felis quis finibus. Vivamus eu leo velit. Ut eu commodo metus. Vivamus conv
 odio, id interdum ligula eleifend non. Quisque vulputate, neque ac sagittis luctus, lacus nisi malesuada dolor, eu interdum dolor mauris non arcu. Maecenas sodales dolor neque, vel dictum mi interdum et. Cras vel volutpat mi, quis iaculis mauris. Curabitur posuere sodales pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eget erat quis nibh dignissim interdum. Morbi pellentesque odio nec dui varius, eget vehicula mauris dictum. Mauris nulla orci, pulvinar ut lacus eu, cursus facilisis turpis. Proin accumsan bibendum enim id facilisis. Suspendisse lacinia quam vel sapien finibus, at dictum felis bibendum.
 
 ---
-[github](https://github.com/pauldougan/static-pandoc), [pipeline](https://github.com/pauldougan/static-pandoc/blob/main/.github/workflows/build.yml)
+[github](https://github.com/pauldougan/static-pandoc/blob/main/index.md), [pipeline](https://github.com/pauldougan/static-pandoc/blob/main/.github/workflows/build.yml)
 
 [GOV.UK PaaS]: https://cloud.service.gov.uk
