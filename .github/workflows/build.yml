@@ -7,11 +7,14 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - run: mkdir -p public
-      - run: cp cf-logo.jpg public/
+      - run: mkdir -v -p public
+      - run: cp -v cf-logo.jpg public/
       - uses: docker://pandoc/latex:2.9
         with:
           args: --standalone --output=public/index.html index.md
+      - uses: docker://pandoc/latex:2.9
+        with:
+          args: --standalone --output=public/index.pdf index.md
       - uses: actions/upload-artifact@v2
         with:
           name: my-artifact
