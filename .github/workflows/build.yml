@@ -3,7 +3,9 @@ name: Run Pandoc
 on: push
   
 env:
-  CONTENT: Hello from github workflow
+  CF_API: https://api.london.cloud.service.gov.uk
+  CF_ORG: gds-techarchs
+  CF_SPACE: sandbox  
 
 jobs:
   convert_via_pandoc:
@@ -12,6 +14,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - run: mkdir -p public
+      - run: cp cf-logo.jpg public/
       - uses: docker://pandoc/latex:2.9
         with:
           args: --standalone --output=public/index.html index.md
@@ -21,9 +24,9 @@ jobs:
           path: public/
       - uses: citizen-of-planet-earth/cf-cli-action@master
         with: 
-          cf_api: https://api.london.cloud.service.gov.uk
+          cf_api: $CF_API
           cf_username: ${{ secrets.CF_USER }}
           cf_password: ${{ secrets.CF_PASSWORD }}
-          cf_org: gds-techarchs
-          cf_space: sandbox 
+          cf_org: $CF_ORG
+          cf_space: $CF_SPACE 
           command: push
