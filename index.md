@@ -2,6 +2,8 @@
 
 Example web page published from markdown using pandoc
 
+![Cloud Foundry logo](cf-logo.jpg)
+
 ## list
 
 - apples
