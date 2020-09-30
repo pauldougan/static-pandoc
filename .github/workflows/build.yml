@@ -11,7 +11,7 @@ jobs:
       - run: cp -v cf-logo.jpg public/
       - uses: docker://pandoc/latex:2.9
         with:
-          args: --standalone --output=public/index.gfm index.md
+          args: -t gfm --standalone --output=public/index.gfm index.md
       - uses: docker://pandoc/latex:2.9
         with:
           args: --standalone --output=public/index.txt index.md
