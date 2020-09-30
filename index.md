@@ -2,12 +2,13 @@
 
 Example web page published from markdown using pandoc/latex and hosted on [GOV.UK PaaS]
 
-- [DOCX](index.docx)
-- [EPUB](index.epub)
-- [HTML](index.html)
-- [ODT](index.odt)
-- [PDF](index.pdf)
-- [TXT](index.txt)
+- [DOCX](index.docx) - Microsoft Word
+- [EPUB](index.epub) - epub ebook format
+- [GFM](index.gfm) - GitHub flavoured markdown
+- [HTML](index.html) - HTML5
+- [ODT](index.odt) - Open document format
+- [PDF](index.pdf) - Adobe PDF
+- [TXT](index.txt) - plain text
 
 
 ![Cloud Foundry logo](cf-logo.jpg)
