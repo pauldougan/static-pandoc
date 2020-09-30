@@ -4,7 +4,7 @@ Example web page published from markdown using pandoc/latex and hosted on [GOV.U
 
 - [DOCX](index.docx) - Microsoft Word
 - [EPUB](index.epub) - epub ebook format
-- [GFM](index.gfm) - GitHub flavoured markdown
+- [GFM](index.gfm.txt) - GitHub flavoured markdown
 - [HTML](index.html) - HTML5
 - [ODT](index.odt) - Open document format
 - [PDF](index.pdf) - Adobe PDF
