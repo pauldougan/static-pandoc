@@ -7,11 +7,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          ref: master
       - run: mkdir -v -p public
       - run: cp -v cf-logo.jpg public/
       - uses: docker://pandoc/latex:2.9
         with:
-          args: -t gfm --standalone --output=public/index.gfm index.md
+          args: -t gfm --standalone --output=public/index.gfm.txt index.md
       - uses: docker://pandoc/latex:2.9
         with:
           args: --standalone --output=public/index.txt index.md
