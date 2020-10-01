@@ -8,7 +8,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          ref: master
+          ref: main
       - run: mkdir -v -p public
       - run: cp -v cf-logo.jpg public/
       - uses: docker://pandoc/latex:2.9
