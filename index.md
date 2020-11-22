@@ -10,7 +10,6 @@ Example web page published from markdown using pandoc/latex and hosted on [GOV.U
 - [PDF](index.pdf) - Adobe PDF
 - [TXT](index.txt) - plain text
 
-
 ![Cloud Foundry logo](cf-logo.jpg)
 
 ## list
