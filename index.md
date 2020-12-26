@@ -20,7 +20,6 @@ Example web page published from markdown using pandoc/latex and hosted on [GOV.U
 
 ## Lorem Ipsum
 
-Hello Trent
 
 ### dolor sit amet
 
