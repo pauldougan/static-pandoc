@@ -2,6 +2,6 @@
 
 ![Run Pandoc](https://github.com/pauldougan/static-pandoc/workflows/Run%20Pandoc/badge.svg)
 
-a simple that generates content from markdown using pandoc from github actions and deploys to the GOV.UK PaaS (Cloud Foundry)
-- https://github.com/pauldougan/static-pandoc/blob/main/.github/workflows/build.yml
+A simple GitHub actions [pipeline](.github/workflows/build.yml) that generates content from markdown using pandoc and deploys to the [GOV.UK PaaS](https://cloud.service.gov.uk) (Cloud Foundry)
+
 - https://github.com/citizen-of-planet-earth/cf-cli-action
